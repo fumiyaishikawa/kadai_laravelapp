@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// 尊貴登録ページの設定
+Route::get('/register', function () {
+    return view('task.register');
+});
+// ログインページの設定
+Route::get('/login', function () {
+    return view('task.login');
+});
