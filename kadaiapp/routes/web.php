@@ -14,11 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-// 尊貴登録ページの設定
-Route::get('/register', function () {
-    return view('task.register');
-});
+
+// 新規登録ページの設定
+Route::get('/register', 'ViewRegisterController@index');
+
 // ログインページの設定
-Route::get('/login', function () {
-    return view('task.login');
-});
+Route::get('/login', 'ViewLoginController@index');
