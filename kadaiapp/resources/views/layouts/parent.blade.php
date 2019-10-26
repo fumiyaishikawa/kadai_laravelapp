@@ -9,6 +9,8 @@
         <h2>Laravel</h2>
         <p><a href="/login">Login</a></p>
         <p><a href="/register">Register</a></p>
+        {{-- ヘッダーの追加要素 --}}
+        @yield('header')
     </header>
 
     <div class="todo-block">
