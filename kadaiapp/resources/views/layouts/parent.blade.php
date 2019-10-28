@@ -7,8 +7,8 @@
 <body>
     <header>
         <h2>Laravel</h2>
-        <p><a href="/login">Login</a></p>
-        <p><a href="/register">Register</a></p>
+        <p><a href="{{ route('viewlogin') }}">Login</a></p>
+        <p><a href="{{ route('viewregister') }}">Register</a></p>
         {{-- ヘッダーの追加要素 --}}
         @yield('header')
     </header>

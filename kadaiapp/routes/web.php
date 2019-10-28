@@ -11,11 +11,11 @@
 |
 */
 // ホームページの設定
-Route::get('/', 'ViewHomeController@index');
+Route::get('/', 'ViewHomeController@index')->name('viewhome');
 
 // 新規登録ページに関するルーティング
-Route::get('/register', 'ViewRegisterController@index');
-Route::post('/register', 'ViewRegisterController@post');
+Route::get('/register', 'ViewRegisterController@index')->name('viewregister');
+Route::post('/register', 'ViewRegisterController@post')->name('viewregister');
 
 // ログインページの設定
-Route::get('/login', 'ViewLoginController@index');
+Route::get('/login', 'ViewLoginController@index')->name('viewlogin');

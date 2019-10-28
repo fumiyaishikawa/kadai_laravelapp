@@ -6,7 +6,7 @@
 {{-- ヘッダーの追加要素 --}}
 @section('header')
 <p>{{ $user }}</p>
-<p><a href="/login">Logout</a></p>
+<p><a href="{{ route('viewlogin') }}">Logout</a></p>
 @endsection
 
 {{-- 個別ページの内容 --}}

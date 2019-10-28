@@ -20,6 +20,6 @@
         <label for="check">Remember Me</label>
     </p>
     <button type="submit">Login</button>
-    <p><a href="/register">Forget Your Password?</a></p>
+    <p><a href="{{ route('viewregister') }}">Forget Your Password?</a></p>
 </form>
 @endsection

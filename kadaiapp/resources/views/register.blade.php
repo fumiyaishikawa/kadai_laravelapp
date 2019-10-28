@@ -9,7 +9,7 @@
 @if(count($errors) > 0)
 <p>入力に問題があります。再入力してください。</p>
 @endif
-<form action="/register" method="post">
+<form action="{{ route('viewregister') }}" method="post">
     {{ csrf_field() }}
     <!-- nameフィールド -->
     @if($errors->has('name'))
