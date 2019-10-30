@@ -19,10 +19,6 @@ class ViewRegisterController extends Controller {
 
         // バリデーションが問題なければホーム画面に遷移する。
         // フォームの名前をユーザー名としてビューに渡す
-        return view('home', ['user' => $request['name']. '様']);
-
-        // 以下のコードはNon-static method〜エラーが出てしまう。use Requestでもダメ
-        // $userdata = $request::all();
-        // return view('home', compact('user'));
+        return view('home', ['user' => $request->name. '様']);
     }
 }
